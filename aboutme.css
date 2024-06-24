@@ -1,0 +1,78 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: rgb(254, 246, 241);
+  font-family: "Gamja Flower";
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(254, 246, 241);
+  padding: 0 50px;
+}
+
+.top {
+  display: flex; /* Make .top a flex container */
+  justify-content: space-between; /* This will push .home to the left and .right to the right */
+  align-items: center; /* This will vertically align .home and .right in the center */
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.home .home-link {
+  padding-top: 10px;
+  font-family: "Gamja Flower", cursive;
+  font-size: 28px;
+  color: rgb(145, 48, 72);
+  text-decoration: none;
+}
+
+.right-link {
+  text-decoration: none;
+  color: rgb(145, 48, 72);
+}
+
+.right {
+  display: flex; /* Make .right a flex container */
+  gap: 20px;
+  font-family: "Gamja Flower", cursive; /* Ensure you have the correct font family declaration */
+  font-size: 28px;
+  text-decoration: none;
+  color: rgb(145, 48, 72);
+}
+
+#bottomscreen {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  padding: 0 50px;
+  display: flex;
+}
+#aboutme {
+  width: 200px;
+  height: auto;
+  padding: 0 50;
+  margin-right: 50px;
+}
+
+.left-triad,
+.middle-triad,
+.right-triad {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.bio p {
+  font-size: 18px;
+  margin: 10;
+}
+
+#specification p {
+  margin: 0;
+}

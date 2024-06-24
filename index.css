@@ -1,0 +1,151 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: rgb(254, 246, 241);
+}
+
+.home-screen {
+  height: calc(100vh + 140px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(254, 246, 241);
+  padding: 0 50px;
+}
+
+.top {
+  display: flex; /* Make .top a flex container */
+  justify-content: space-between; /* This will push .home to the left and .right to the right */
+  align-items: center; /* This will vertically align .home and .right in the center */
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.home .home-link {
+  padding-top: 10px;
+  font-family: "Gamja Flower", cursive;
+  font-size: 28px;
+  color: rgb(145, 48, 72);
+  text-decoration: none;
+}
+
+.right-link {
+  text-decoration: none;
+  color: rgb(145, 48, 72);
+}
+
+.right {
+  display: flex; /* Make .right a flex container */
+  gap: 20px;
+  font-family: "Gamja Flower", cursive; /* Ensure you have the correct font family declaration */
+  font-size: 28px;
+  text-decoration: none;
+  color: rgb(145, 48, 72);
+}
+
+.personal {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 55px;
+  margin-top: 150px;
+}
+
+.text-content {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Gamja Flower";
+  color: rgb(145, 48, 72);
+  margin-bottom: 10px;
+  display: flex;
+}
+.description {
+  font-size: 20px;
+  font-family: "Gamja Flower";
+  color: rgb(145, 48, 72);
+  padding-right: 50px;
+  display: flex;
+  overflow-y: hidden;
+}
+.text-content,
+.description {
+  flex: 1;
+}
+
+.drawing {
+  flex-shrink: 0;
+  align-self: start;
+  margin-top: 50px;
+}
+
+#work-button {
+  border: none;
+  border-radius: 30px;
+  width: 100px;
+  padding: 10px;
+  align-self: center;
+  background-color: rgb(227, 196, 204);
+  color: rgb(145, 48, 72);
+  font-family: "Gamja Flower";
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+}
+
+#work-button a {
+  color: rgb(145, 48, 72);
+  text-decoration: none; /* Remove underline */
+}
+
+#work-button:hover {
+  background-color: rgb(244, 229, 233);
+}
+
+section,
+.work-details {
+  background-color: rgb(254, 246, 241);
+}
+
+.work-details {
+  font-family: "Gamja Flower";
+  font-size: 20px;
+  text-align: center;
+  color: rgb(145, 48, 72);
+}
+
+#camera-preview {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: block;
+  height: 300px;
+  width: auto;
+}
+
+#merch-preview {
+  width: 600px;
+  height: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.preview-description {
+  font-family: "Gamja Flower";
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+  color: rgb(145, 48, 72);
+  font-style: italic;
+}
