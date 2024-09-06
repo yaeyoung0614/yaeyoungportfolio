@@ -5,6 +5,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   background: url("./Icons/contactImage.jpg") no-repeat center -120px;
+  /* image is not uploading on website? */
   background-size: cover;
   font-family: "Gamja Flower";
 }
