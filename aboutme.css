@@ -1,78 +1,265 @@
 body,
 html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  background-color: #fffbfb;
   scroll-behavior: smooth;
-  background-color: rgb(254, 246, 241);
   font-family: "Gamja Flower";
 }
 
-.home-screen {
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+#name {
+  margin-left: 30px;
+}
+
+.mainHeader {
+  background-color: #fffbfb; /* Keeps the text from going underneath and provides a solid color. */
   display: flex;
-  flex-direction: column;
-  background-color: rgb(254, 246, 241);
-  padding: 0 50px;
-}
-
-.top {
-  display: flex; /* Make .top a flex container */
-  justify-content: space-between; /* This will push .home to the left and .right to the right */
-  align-items: center; /* This will vertically align .home and .right in the center */
-  margin-top: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.home .home-link {
-  padding-top: 10px;
-  font-family: "Gamja Flower", cursive;
-  font-size: 28px;
-  color: rgb(145, 48, 72);
+  justify-content: space-between; /* This will push leftNavigation to the left and rightNavigation to the right */
   text-decoration: none;
 }
 
-.right-link {
-  text-decoration: none;
-  color: rgb(145, 48, 72);
-}
-
-.right {
-  display: flex; /* Make .right a flex container */
+.rightNavigation {
+  display: flex;
   gap: 20px;
-  font-family: "Gamja Flower", cursive; /* Ensure you have the correct font family declaration */
-  font-size: 28px;
   text-decoration: none;
-  color: rgb(145, 48, 72);
 }
 
-#bottomscreen {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: 30px;
-  padding: 0 50px;
+#Instagram {
+  height: 20px;
+  width: auto;
+  margin-top: 10px;
+}
+
+#Gmail {
+  height: 23px;
+  width: 23px;
+  margin-top: 9.5px;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 3px;
   display: flex;
+  gap: 10px;
 }
-#aboutme {
-  width: 200px;
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: #deb9b9;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+  font-family: "Gamja Flower";
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #f4e5e5;
+  color: black;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .footer-nav li {
+    margin: 0 15px;
+  }
+
+  .footer-nav a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .social-media:hover {
+    display: flex;
+    text-decoration: underline;
+  }
+
+  .social-icon {
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#gallery {
+  height: 100vh;
+}
+
+#profile {
+  height: 300px;
+  width: auto;
+  top: 20%;
+  left: 43%;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#profile-description {
+  max-width: 450px;
+  position: absolute;
+  top: 63%;
+  left: 35%;
+  text-align: center;
+}
+
+#shinchan {
   height: auto;
-  padding: 0 50;
-  margin-right: 50px;
+  width: 105px;
+  top: 300px;
+  left: 950px;
+  position: absolute;
+  border-radius: 20px;
 }
 
-.left-triad,
-.middle-triad,
-.right-triad {
-  flex: 1;
-  box-sizing: border-box;
-  padding: 10px;
+#shinchan-description {
+  max-width: 320px;
+  position: absolute;
+  top: 32%;
+  left: 62%;
 }
 
-.bio p {
-  font-size: 18px;
-  margin: 10;
+#sew {
+  height: 300px;
+  width: auto;
+  top: 90px;
+  left: 1200px;
+  position: absolute;
+  border-radius: 20px;
 }
 
-#specification p {
-  margin: 0;
+#sew-description {
+  max-width: 320px;
+  position: absolute;
+  top: 53%;
+  left: 83%;
+}
+
+#lisa {
+  height: auto;
+  width: 200px;
+  top: 250px;
+  left: 360px;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#lisa-description {
+  max-width: 320px;
+  position: absolute;
+  top: 29%;
+  left: 25%;
+}
+
+#makeup {
+  height: auto;
+  width: 236px;
+  top: 450px;
+  left: 10%;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#makeup-description {
+  top: 90%;
+  left: 180px;
+  position: absolute;
+}
+
+#tights {
+  height: 240px;
+  width: auto;
+  top: 150px;
+  left: 90px;
+  position: absolute;
+}
+
+#tights-description {
+  max-width: 180px;
+  text-align: center;
+  top: 370px;
+  left: 90px;
+  position: absolute;
+}
+
+#potato {
+  height: auto;
+  width: 150px;
+  top: 65%;
+  left: 75%;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#potato-description {
+  top: 85%;
+  left: 75%;
+  position: absolute;
 }

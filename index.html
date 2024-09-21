@@ -5,56 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yae Young Kim</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="Icons/yakgwa_png.png" type="image/x-icon" />
+    <link rel="icon" href="Images/yakgwa_png.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Gamja Flower"
       rel="stylesheet"
     />
-    <script src="index.js"></script>
   </head>
 
   <body>
-    <div class="home-screen">
-      <div class="top">
-        <div class="home">
-          <a href="index.html" class="home-link">Yae Young</a>
+    <header class="header">
+      <div class="mainHeader">
+        <div class="leftNavigation">
+          <div id="name">
+            <a href="index.html" class="link"><p>Yae Young</p></a>
+          </div>
         </div>
-        <div class="right">
-            <a href="#works" class="right-link">Work</a></li>
-            <a href="aboutme.html" class="right-link">About Me</a>
-            <a href="contact.html" class="right-link">Contact</a>
-        </div>
-      </div>
-
-      <div class="introduction">
-        <div class="personal">
-            <div class="text-wrapper">
-                <div class="text-content"> Hey! I'm Yae Young</div>
-                <div class="description">From wanting to become a interior designer to a fashion designer, I've always had a liking for aesthetics. Here I am now, interested in UI/UX design! My current focus is on mobile app interfaces, where I am trying to make daily interactions not just functional, but beautiful. Please don't hesitate to reach out as I am open to collaboration and further learning opportunities!</div>
+        <div class="rightNavigation">
+          <div>
+            <a href="aboutme.html" class="link"><p>About Me</p></a>
+          </div>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/16BnRW4pb0wsqC6Ubz3ntz5acDpUBd5hE/view?usp=sharing"
+              class="link"
+              target="_blank"
+              ><p>Resume</p></a
+            >
+          </div>
+          <div>
+            <a href="portfolio.html" class="link"><p>Portfolio</p></a>
+          </div>
+          <div>
+            <a href="contact.html" class="link"><p>Contact</p></a>
+          </div>
+          <div class="socials">
+            <div>
+              <a
+                href="https://www.instagram.com/yaeyyoung/?hl=en"
+                target="_blank"
+                ><img src="Images/Instagram.webp" id="Instagram"
+              /></a>
             </div>
-            <img src="Icons/logo_me.png" class="drawing">
+            <div>
+              <a
+                href="mailto:yaeyoung0614@gmail.com?subject=Subject%20Here&body=Message%20Here"
+                target="_blank"
+                ><img src="Images/Mail.png" id="Gmail"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
+    </header>
 
-      <button id="work-button"><a href="#works">View My Works!</a></button>
-
+    <div class="main">
+      <div class="introduction">
+        <div>
+          <span style="font-size: 30px"><p>Hey! I'm Yae Young</p></span>
+        </div>
+        <div id="intro-width">
+          <p>
+            From wanting to become a interior designer to a fashion designer,
+            I've always had a liking for aesthetics. Here I am now, interested
+            in UI/UX design! My current focus is on mobile app interfaces, where
+            I am trying to make daily interactions not just functional, but
+            beautiful. Please don't hesitate to reach out as I am open to
+            collaboration and further learning opportunities!
+          </p>
+        </div>
+      </div>
+      <div class="image">
+        <img id="logo_me" src="Images/logo_me.png" />
+      </div>
     </div>
 
-    <section id="works" class="works">
-      <div class="work-details">
-        <p>Please be patient! Projects incoming...</p>
-        <p>While you wait, get a sneak peak!</p>
+    <button id="viewProjects">
+      <a href="#projects" class="link">View my projects</a>
+    </button>
+
+    <section id="projects">
+      <p id="featured">Featured Projects</p>
+      <div class="CamEra">
+        <a href="./Projects/CamEra.html"
+          ><img class="demoPicture" src="Images/CamEraDEMO.png"
+        /></a>
+        <div class="nameAndDescription">
+          <div>
+            <a href="./Projects/CamEra.html" class="link"
+              ><p class="name">CamEra</p></a
+            >
+          </div>
+          <div>
+            <p class="description">
+              CamEra is a mobile app designed to simplify the journey of
+              discovering your ideal digital camera. Built with Figma, React
+              Native, HTML, and CSS, this app caters specifically to young,
+              female photography enthusiasts who are embracing the latest
+              digital camera trend. Explore nine popular digital camera models
+              from 1995 to 2018, complete with detailed information, stunning
+              example photos, and user reviews. With integrated purchase links,
+              CamEra makes it easy to find and buy your dream camera all in one
+              place. Dive into the world of photography and capture your
+              memories with CamEra!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="Merch">
+        <div class="nameAndDescription">
+          <div>
+            <a href="./Projects/Merch.html" class="link"
+              ><p class="name">The Merch</p></a
+            >
+          </div>
+          <div>
+            <p class="description">
+              The Merch is an enhanced online presence for a local screen print
+              shop in Carrboro, designed to improve user experience and reflect
+              the brand's unique identity. I utilized HTML and CSS to create a
+              clean, streamlined design, informed by UX research that included
+              visiting the shop. This hands-on approach provided insights into
+              customer interactions and the shop's ambiance. The revamped
+              website simplifies navigation and improves accessibility, ensuring
+              a seamless experience for users while effectively representing The
+              Merch and its vibrant community.
+            </p>
+          </div>
+        </div>
+        <a href="./Projects/Merch.html"
+          ><img id="merchPicture" src="Images/MerchDEMO.png"
+        /></a>
+      </div>
+
+      <div class="ChapelChill">
+        <a href="./Projects/ChapelChill.html"
+          ><img class="demoPicture" src="Images/ChapelChillDEMO.png"
+        /></a>
+        <div class="nameAndDescription">
+          <div>
+            <a href="./Projects/ChapelChill.html" class="link"
+              ><p class="name">Chapel Chill</p></a
+            >
+          </div>
+          <div>
+            <p class="description">
+              Chapel Chill is an innovative app that connects college students
+              with social events on campus, promoting safety and inclusivity. I
+              created an advanced mockup in Figma, featuring a vibrant main page
+              for easy browsing of nearby events. The event details screen
+              includes essential information, engaging images, and an RSVP
+              option. A personal events page allows users to manage their
+              interests by displaying bookmarked events and calendar entries.
+              Chapel Chill combines a social atmosphere with intuitive design,
+              making it the go-to app for enhancing the college experience.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <video id="camera-preview" controls>
-      <source src="./Icons/CamEraDEMO.mp4" type="video/mp4">
-    </video>
-    <!-- <img src="Icons/Screenshot 2024-06-10 141549.png" id="camera-preview"> -->
-    <p class="preview-description">CamEra</p>
-    <p class="preview-description-last"><span style="font-size: 18px;">A mobile app designed to help you find the perfect vintage compact digital camera!</span></p>
-    <img src="Icons/Screenshot 2024-06-24 171758.png" id="merch-preview">
-    <p class="preview-description">The Merch Revamped Website</p>
-    <p class="preview-description-last"><span style="font-size: 18px;">Partnered with a local business to help update their website!</span></p>
 
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img src="Images/footerImage.png" alt="Logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="aboutme.html">About</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/16BnRW4pb0wsqC6Ubz3ntz5acDpUBd5hE/view"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a
+            href="mailto:yaeyoung0614@gmail.com?subject=Subject%20Here&body=Message%20Here"
+            class="social-icon"
+            >Email</a
+          >
+          <a
+            href="https://www.instagram.com/yaeyyoung/?hl=en"
+            target="_blank"
+            class="social-icon"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com/in/yaeyyoung"
+            class="social-icon"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Yae Young Kim. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    window.onscroll = function () {
+      const button = document.querySelector(".back-to-top");
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    };
+  </script>
 </html>

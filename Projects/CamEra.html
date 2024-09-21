@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yae Young Kim</title>
+    <link rel="stylesheet" href="CamEra.css" />
+    <link rel="icon" href="Images/yakgwa_png.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gamja Flower"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="mainHeader">
+        <div class="leftNavigation">
+          <div id="name">
+            <a href="/index.html" class="link"><p>Yae Young</p></a>
+          </div>
+        </div>
+        <div class="rightNavigation">
+          <div>
+            <a href="/aboutme.html" class="link"><p>About Me</p></a>
+          </div>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/16BnRW4pb0wsqC6Ubz3ntz5acDpUBd5hE/view?usp=sharing"
+              class="link"
+              target="_blank"
+              ><p>Resume</p></a
+            >
+          </div>
+          <div>
+            <a href="/portfolio.html" class="link"><p>Portfolio</p></a>
+          </div>
+          <div>
+            <a href="/contact.html" class="link"><p>Contact</p></a>
+          </div>
+          <div class="socials">
+            <div>
+              <a
+                href="https://www.instagram.com/yaeyyoung/?hl=en"
+                target="_blank"
+                ><img src="/Images/Instagram.webp" id="Instagram"
+              /></a>
+            </div>
+            <div>
+              <a href="https://www.gmail.com/" target="_blank"
+                ><img src="/Images/Mail.png" id="Gmail"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img src="/Images/footerImage.png" alt="Logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/aboutme.html">About</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/16BnRW4pb0wsqC6Ubz3ntz5acDpUBd5hE/view"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a
+            href="mailto:yaeyoung0614@gmail.com?subject=Subject%20Here&body=Message%20Here"
+            class="social-icon"
+            >Email</a
+          >
+          <a href="#" class="social-icon">Instagram</a>
+          <a href="https://www.linkedin.com/in/yaeyyoung" class="social-icon"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Yae Young Kim. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    window.onscroll = function () {
+      const button = document.querySelector(".back-to-top");
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    };
+  </script>
+</html>

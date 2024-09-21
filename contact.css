@@ -1,65 +1,197 @@
 body,
 html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  background-color: #fffbfb;
   scroll-behavior: smooth;
-  background: url("./Icons/contactImage.jpg") no-repeat center -120px;
-  /* image is not uploading on website? */
-  background-size: cover;
   font-family: "Gamja Flower";
 }
 
-.home-screen {
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
+.header {
+  position: sticky;
+  top: 0px;
 }
 
-.top {
+#name {
+  margin-left: 30px;
+}
+
+.mainHeader {
+  background-color: #fffbfb; /* Keeps the text from going underneath and provides a solid color. */
+  display: flex;
+  justify-content: space-between; /* This will push leftNavigation to the left and rightNavigation to the right */
+  text-decoration: none;
+}
+
+.rightNavigation {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+
+#Instagram {
+  height: 20px;
+  width: auto;
+  margin-top: 10px;
+}
+
+#Gmail {
+  height: 23px;
+  width: 23px;
+  margin-top: 9.5px;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 3px;
+  display: flex;
+  gap: 10px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: #deb9b9;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+  font-family: "Gamja Flower";
+}
+
+.back-to-top:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #f4e5e5;
+  color: black;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.home .home-link {
-  padding-top: 10px;
-  font-family: "Gamja Flower", cursive;
-  font-size: 28px;
-  color: rgb(145, 48, 72);
-  text-decoration: none;
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
-.right-link {
-  text-decoration: none;
-  color: rgb(145, 48, 72);
-}
-
-.right {
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  gap: 20px;
-  font-family: "Gamja Flower", cursive;
-  font-size: 28px;
-  color: rgb(145, 48, 72);
 }
 
-.contact-info {
-  width: 470px;
-  height: 300px;
-  background-color: rgb(145, 48, 72);
+.footer-nav li {
+  margin: 0 15px;
+}
+
+.footer-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media:hover {
+  display: flex;
+  text-decoration: underline;
+}
+
+.social-icon {
+  margin-left: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
 }
 
-.info {
-  font-size: 22px;
-  color: rgb(254, 246, 241);
+.email-container,
+.linkedin-container {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.instagram-container {
+  display: flex;
+  justify-content: center;
+}
+
+.email-container p {
+  font-size: 14px;
+}
+
+.linkedin-container p {
+  font-size: 14px;
+}
+
+#mail {
+  display: flex;
+  height: 45px;
+}
+
+#linkedin {
+  display: flex;
+  height: 40px;
+}
+
+.linkedin-container a {
+  display: block;
+  line-height: 0;
+  margin-bottom: 8px;
+}
+
+.email-container a {
+  display: block;
+  line-height: 0;
+  margin-bottom: 8px;
 }
