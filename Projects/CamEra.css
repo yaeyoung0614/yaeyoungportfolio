@@ -143,3 +143,169 @@ footer {
   font-size: 14px;
   padding: 10px 0;
 }
+
+.intro-section {
+  background-color: #f4e5e5;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.camera-wrapper {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.preview {
+  background-color: #f4e5e5;
+  padding: 50px;
+  text-align: center;
+}
+
+.preview-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.preview p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.preview img {
+  width: auto;
+  max-width: 300px;
+  height: 100px;
+}
+
+.statement-of-work {
+  background-color: #fffbfb;
+  padding: 60px 20px;
+}
+
+.sow-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sow-text {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sow-text h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sow-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.sow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: #f4e5e5;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid-item h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.grid-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.inspiration {
+  background-color: #fffbfb;
+  padding: 60px 20px;
+}
+
+.inspiration-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inspiration-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.inspiration-logo img {
+  width: auto;
+  max-width: 300px;
+  height: 200px;
+}
+
+.inspiration-text {
+  flex: 2;
+  padding-left: 40px;
+}
+
+.inspiration-text h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.inspiration-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.read-more-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e64a19;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh;
+}
