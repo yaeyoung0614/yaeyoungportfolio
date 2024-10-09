@@ -188,18 +188,17 @@ footer {
 }
 
 .sow-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  max-width: 900px;
+  max-width: 700px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .sow-text h2 {
+  margin: auto;
   font-size: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
+  white-space: nowrap;
 }
 
 .sow-text p {
