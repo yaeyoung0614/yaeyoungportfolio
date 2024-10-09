@@ -234,3 +234,10 @@ footer {
   color: #333;
   line-height: 1.6;
 }
+
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Optional: centers vertically */
+  height: 100vh; /* Adjust height if needed */
+}
