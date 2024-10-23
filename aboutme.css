@@ -154,13 +154,13 @@ footer {
 }
 
 #profile {
-  height: 300px;
-  width: auto;
-  top: 20%;
-  left: 43%;
+  height: auto;
+  width: 230px;
+  top: 25%;
+  left: 42%;
   position: absolute;
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 #profile-description {
