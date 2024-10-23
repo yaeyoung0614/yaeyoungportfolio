@@ -226,3 +226,19 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+
+.button-link {
+  display: inline-block;
+  background-color: #f4e5e5;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+
+.button-link:hover {
+  background-color: #e8cece;
+}
