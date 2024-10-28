@@ -309,3 +309,13 @@ footer {
   align-items: center; /* Centers vertically */
   height: 100vh;
 }
+
+.canva-embed-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
