@@ -324,4 +324,5 @@ footer {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+  border-radius: 50px;
 }
