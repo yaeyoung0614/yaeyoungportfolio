@@ -123,8 +123,6 @@ html {
 
 .nameAndDescription {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-direction: column;
   padding-left: 30px;
 }
@@ -136,6 +134,8 @@ html {
 .description {
   max-width: 500px;
   font-size: 17px;
+  justify-content: center;
+  align-items: center;
 }
 
 .back-to-top {
