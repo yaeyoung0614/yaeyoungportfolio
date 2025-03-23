@@ -56,24 +56,32 @@ html {
 .about-container {
   display: flex;
   margin: 30px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .trifold-1 {
-  background-color: brown;
   flex: 1;
   flex-direction: column;
+}
+
+.trifold-1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.image-with-description {
+  text-align: center;
+}
+
+.image-with-description p {
+  margin-top: 0;
 }
 
 #about-intro {
   flex-direction: column;
   align-items: center;
-}
-
-#about-intro img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 
 #about-intro p {
@@ -104,13 +112,56 @@ html {
 }
 
 .trifold-2 {
-  background-color: cadetblue;
   flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.trifold-2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.center-message {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+}
+
+#message {
+  max-width: 80%;
+  height: auto;
+}
+
+.double {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.double img {
+  width: 49%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .trifold-3 {
-  background-color: coral;
   flex: 1;
+  flex-direction: column;
+}
+
+.trifold-3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .back-to-top {

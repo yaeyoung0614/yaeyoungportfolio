@@ -161,6 +161,13 @@ footer {
   margin-bottom: 100px;
 }
 
+#contact {
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
 .instagram-container {
   display: flex;
   justify-content: center;
