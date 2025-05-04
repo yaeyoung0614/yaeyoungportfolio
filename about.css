@@ -237,6 +237,7 @@ main {
   }
   .gallery-item img {
     height: 200px;
+    width: 100%;
   }
 }
 
@@ -271,10 +272,11 @@ main {
 @media (max-width: 900px) {
   .gallery-grid-manual {
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
   .gallery-column {
-    width: 100%;
+    width: 600px;
+    height: 100%;
     max-width: 100%;
   }
   .gallery-item {

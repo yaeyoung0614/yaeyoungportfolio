@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centible - Savings Goals</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="centible.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="signals-hero">
+        <div class="signals-hero-media">
+          <img
+            src="Images/centiblee.png"
+            alt="Signals Hero."
+            class="signals-hero-img"
+          />
+        </div>
+        <div class="signals-header">
+          <h1 class="signals-title">Centible - Savings Goals</h1>
+          <div class="signals-info-grid">
+            <div>
+              <strong>Team</strong><br />
+              Yae Young Kim <br />
+              Sanjana Gopalswamy <br />
+              Johanna Lomus
+            </div>
+            <div>
+              <strong>My Role</strong><br />
+              UI Designer<br />
+            </div>
+            <div>
+              <strong>Tools</strong><br />
+              Figma<br />
+              Notion
+            </div>
+            <div>
+              <strong>Timeline</strong><br />
+              4 Weeks
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="signals-sidebar" id="signals-sidebar">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+      </nav>
+      <section class="signals-section" id="overview">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">01. Overview</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <strong>Context</strong>
+            <h3>Saving is a long game—and often a quiet one.</h3>
+            <p>
+              Most savings tools emphasize the end result: a number, a
+              threshold, a completed bar. For users trying to build healthy
+              financial habits, the challenge isn't just how to save, but how to
+              stay with it. Numbers alone rarely sustain motivation. What's
+              needed is a way to make progress feel real—even when the finish
+              line is far away.
+            </p>
+            <p>
+              Centible wanted to introduce a new savings feature that respected
+              this emotional journey. It had to feel simple, but thoughtful.
+              Lightweight, but persistent. A feature designed not for perfect
+              savers, but for committed ones.
+            </p>
+            <strong>Goal</strong>
+            <p>Create a savings goal experience that helps users:</p>
+            <p>
+              1. Set intentional financial goals (vacations, emergency funds,
+              large purchases) <br />
+              2. Track and visualize progress in a way that feels clear and
+              encouraging <br />
+              3. Feel emotionally reinforced by their consistency—not just by
+              hitting targets
+            </p>
+            <p>
+              It needed to live within the broader Centible ecosystem,
+              integrating smoothly into the budgeting flow while offering enough
+              autonomy to feel personalized.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="signals-centered-image">
+        <img src="Images/messages.png" alt="Chat screenshot" />
+      </div> -->
+      <section class="signals-section" id="process">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">02. Process</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <h3>1. Setting a Goal</h3>
+            <p>
+              The flow begins with a simple prompt: What are you saving for?
+            </p>
+            <p>Users create a goal by:</p>
+            <ul class="signals-problem-list">
+              <li>Naming it ("Emergency Fund," "Thailand Trip")</li>
+              <li>Setting a target amount</li>
+              <li>Optionally adding a note</li>
+              <li>
+                Optionally logging any existing savings as a starting balance
+              </li>
+            </ul>
+            <p>
+              We intentionally kept this flow minimal. Conversations during
+              early design reviews surfaced the need to reduce friction,
+              especially for users new to structured saving.
+            </p>
+            <p class="signals-cite">
+              We consolidated "Do you have existing savings?" into the new goal
+              flow (instead of a separate screen) to avoid interrupting
+              momentum.
+            </p>
+
+            <h3>2. Manual vs. Linked Deposits</h3>
+            <p>
+              Once a goal is created, users update their progress by logging
+              deposits—either manually or via linked accounts.
+            </p>
+            <p>We explored three implementation paths:</p>
+            <ul class="signals-problem-list">
+              <li>
+                <strong>Manual input (MVP):</strong> Most direct and flexible;
+                users add deposits anytime they save.
+              </li>
+              <li>
+                <strong>Linked savings account via Plaid:</strong> Automatically
+                attributes transfers toward goals based on rules. More seamless,
+                but higher technical complexity and risk of misattribution.
+              </li>
+              <li>
+                <strong>Percentage-based automation:</strong> E.g., "10% of any
+                deposit goes to savings goals." Simple for users but blurs the
+                boundary between spending and saving accounts.
+              </li>
+            </ul>
+            <p class="signals-cite">
+              We prioritized manual entry for the initial release. It gave users
+              control, required minimal backend complexity, and avoided the
+              confusion of automated withdrawals. Smart allocation rules via
+              Plaid were logged as a future enhancement.
+            </p>
+
+            <h3>3. Visual Feedback</h3>
+            <p>
+              Savings progress is visualized through a clean progress bar or
+              percentage wheel. This made progress tangible and satisfying, even
+              if the numbers were small.
+            </p>
+            <p>Each goal screen displays:</p>
+            <ul class="signals-problem-list">
+              <li>Goal name + editable note</li>
+              <li>Target amount + current progress</li>
+              <li>Estimated completion time (based on deposit history)</li>
+              <li>Deposit log (manual + linked, with dates and amounts)</li>
+              <li>
+                Optional motivational insights (e.g. "You've saved $200 this
+                month!")
+              </li>
+            </ul>
+            <p class="signals-cite">
+              Progress visualization was designed to feel fluid, not mechanical.
+              Completion estimates offer orientation without pressure.
+            </p>
+
+            <h3>4. Dashboard + Goal Management</h3>
+            <p>Goals live in a consolidated dashboard view, where users can:</p>
+            <ul class="signals-problem-list">
+              <li>See all active goals at a glance</li>
+              <li>
+                Toggle to show/hide completed goals (inspired by the iOS
+                Reminders app)
+              </li>
+              <li>Tap into any goal for deeper insights</li>
+            </ul>
+            <p>
+              We originally considered using category icons for each goal (e.g.
+              plane for travel, piggy bank for emergency), but this created
+              confusion with spending categories. Instead, we adopted a
+              universal icon with color customization, giving users a small
+              moment of ownership.
+            </p>
+            <p class="signals-cite">
+              Color-coding let users bring personality to their goals without
+              cluttering the UI.
+            </p>
+
+            <h3>5. Reinforcement + Motivation</h3>
+            <p>
+              We wanted users to feel recognized—not in a gamified, high-stakes
+              way, but in small, timely moments.
+            </p>
+            <p>Ideas we explored:</p>
+            <ul class="signals-problem-list">
+              <li>Milestone badges for reaching 25%, 50%, 100%</li>
+              <li>Encouraging notifications tied to deposit behavior</li>
+              <li>
+                Streaks for regular saving (ultimately scrapped—see below)
+              </li>
+            </ul>
+            <p class="signals-cite">
+              We intentionally removed streaks after user research showed that
+              inconsistent savers felt discouraged by them. Instead, we leaned
+              into quiet encouragement, like, "You added to your savings again
+              this week—nice work."
+            </p>
+            <p>
+              We also decided against implementing recurring savings schedules.
+              Users who forgot they turned on automation often felt confused or
+              frustrated when money moved unexpectedly.
+            </p>
+
+            <h3>Design Decisions</h3>
+            <ul class="signals-problem-list">
+              <li>
+                <strong>Location in app:</strong> After discussion, we housed
+                Savings Goals under the Budgets tab instead of introducing a new
+                one—simplifying navigation and maintaining cohesion with
+                financial planning.
+              </li>
+              <li>
+                <strong>Completion flow:</strong> We debated adding a "Mark Goal
+                Complete" CTA, but opted for automatic completion when the goal
+                target is met. It reduces friction and avoids unnecessary
+                decision-making.
+              </li>
+              <li>
+                <strong>Filtering:</strong> Completed goals are hidden by
+                default, but accessible via a toggle. This gives users a sense
+                of closure without visual noise.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="design">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">03. Design</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <h3>Initial Sketches</h3>
+            <p>
+              The design process began with quick sketches to explore different
+              layouts and interactions for the savings goals feature. I focused
+              on making the experience feel lightweight while maintaining
+              clarity.
+            </p>
+            <div class="signals-centered-image">
+              <video
+                src="Images/centible_timelapse.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto; border-radius: 1.2rem"
+              ></video>
+            </div>
+            <p class="signals-cite">
+              Early sketches explored different ways to visualize progress and
+              handle goal creation.
+            </p>
+
+            <h3>Wireframes</h3>
+            <p>
+              Moving from sketches to wireframes, I refined the layout and
+              interaction patterns. The goal was to create a clear hierarchy
+              while keeping the interface minimal and focused.
+            </p>
+            <div class="signals-centered-image">
+              <img
+                src="Images/centible_wireframes.jpeg"
+                alt="Initial sketch of savings goals interface"
+              />
+            </div>
+            <p class="signals-cite">
+              🎯 Wireframes helped validate the information architecture and
+              user flow.
+            </p>
+
+            <h3>Dashboard + Goal Management</h3>
+            <p>Goals live in a consolidated dashboard view, where users can:</p>
+            <ul class="signals-problem-list">
+              <li>See all active goals at a glance</li>
+              <li>
+                Toggle to show/hide completed goals (inspired by the iOS
+                Reminders app)
+              </li>
+              <li>Tap into any goal for deeper insights</li>
+            </ul>
+            <p>
+              We originally considered using Centible's existing category icons
+              (e.g., travel, emergency, home), but during testing, these created
+              confusion when visually overlapping with spending categories. To
+              reduce cognitive load and keep the feature feeling distinct, we
+              explored a separate set of icons specifically for savings goals.
+              These were designed to be more aspirational and
+              symbolic—reflecting goals like "Peace of Mind" or
+              "Adventure"—rather than transactional.
+            </p>
+            <div class="signals-centered-image">
+              <img
+                src="Images/goal_types_centible.png"
+                alt="Icon design exploration"
+                style="width: 110%; height: auto"
+              />
+            </div>
+            <p>
+              Ultimately, we decided to adopt a more universal icon with
+              optional color customization for the MVP. This provided users with
+              a moment of ownership and clarity while keeping the UI clean and
+              focused. Custom goal icons remain on our roadmap as a potential
+              enhancement for future personalization.
+            </p>
+
+            <h3>Final Design System</h3>
+            <p>
+              The final design system established consistent patterns for the
+              savings goals feature, ensuring it felt cohesive with the rest of
+              the Centible app while maintaining its unique identity.
+            </p>
+            <div class="signals-centered-image">
+              <img
+                src="Images/centible_components.png"
+                alt="Design system components"
+                style="border-radius: 1.2rem"
+              />
+            </div>
+            <p class="signals-cite">
+              🎯 The design system ensured consistency across all savings goal
+              interactions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="solution">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">04. Solution</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <div class="solution-problem-block">
+              <strong>Problem</strong>
+              <ol class="signals-problem-list" style="margin-top: 0.5rem">
+                <li>
+                  Pressure from the expectation to reply immediately after a
+                  message is read.
+                </li>
+                <li>
+                  Avoidance – users dodging read receipts to manage social
+                  discomfort.
+                </li>
+                <li>
+                  Lack of context around message status leading to
+                  miscommunication.
+                </li>
+              </ol>
+              <p style="margin-top: 0.5rem">
+                In this case study, I give our approach to redesigning Duolingo
+                to enrich the experience for individuals facing dyslexia, visual
+                impairments, and/or hearing impairments. As an added benefit,
+                these enhancements not only accommodate these groups but also
+                elevate usability and enjoyment for all users.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="solution-mockup-row">
+          <img
+            src="Images/centible2.png"
+            alt="Grad Trip Goal Screen"
+            class="solution-mockup-img"
+          />
+          <video
+            src="Images/centible_demo 15.50.51.mov"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
+          <img
+            src="Images/centible3.png"
+            alt="Goal Customization Screen"
+            class="solution-mockup-img"
+          />
+        </div>
+      </section>
+      <section class="signals-section" id="review">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">05. Review</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <h3>App Team Carolina Gala</h3>
+            <p>
+              At the end of the semester, I had the opportunity to present our
+              team's work at the App Team Carolina Gala. It was a rewarding
+              experience to showcase our progress and share the story behind
+              Centible with peers, mentors, and industry professionals. The
+              event highlighted the impact of our project and the value of
+              collaborative, student-driven innovation.
+            </p>
+            <div class="signals-centered-image">
+              <img
+                src="Images/presenting.png"
+                alt="Presenting at App Team Carolina Gala"
+                style="border-radius: 1.2rem"
+              />
+            </div>
+            <p class="signals-cite">
+              🎉 Presenting at the gala was a proud moment for our team and a
+              great way to celebrate our hard work.
+            </p>
+
+            <h3>Reflections on Cross-Functional Collaboration</h3>
+            <p>
+              Working on Centible as part of a cross-functional team was a
+              transformative experience. Unlike solo projects, collaborating
+              with developers and backend engineers required me to think beyond
+              just the user interface. I had to consider technical constraints,
+              communicate design intent clearly, and adapt my process to fit the
+              needs of the entire team.
+            </p>
+            <p>
+              This collaboration pushed me to be more flexible and pragmatic in
+              my design decisions. I learned the importance of clear
+              documentation, open communication, and iterative feedback.
+              Ultimately, working with a diverse team made the final product
+              stronger and more user-centered.
+            </p>
+            <p class="signals-cite">
+              🤝 Designing alongside developers and backend engineers taught me
+              how to bridge the gap between vision and implementation.
+            </p>
+            <p>Go Centible!!</p>
+            <div class="signals-centered-image">
+              <img
+                src="Images/centible_team_pic.png"
+                alt="Presenting at App Team Carolina Gala"
+                style="border-radius: 1.2rem"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="research"></section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-heading">
+          Want to get in touch? I'd love to connect with you!
+        </p>
+        <div class="footer-links">
+          <a href="mailto:yaeyoung@ad.unc.edu">Email &rarr;</a>
+          <a
+            href="https://www.linkedin.com/in/yaeyyoung/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn &rarr;</a
+          >
+          <a
+            href="https://www.instagram.com/yaeyyoung/?hl=en"
+            target="_blank"
+            rel="noopener"
+            >Instagram &rarr;</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Show sidebar only after scrolling past hero
+      window.addEventListener("scroll", function () {
+        const sidebar = document.getElementById("signals-sidebar");
+        const hero = document.querySelector(".signals-hero");
+        if (window.scrollY > hero.offsetHeight - 80) {
+          sidebar.classList.add("visible");
+        } else {
+          sidebar.classList.remove("visible");
+        }
+      });
+      // Enable smooth scrolling for sidebar links
+      document.querySelectorAll(".signals-sidebar a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href && href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
