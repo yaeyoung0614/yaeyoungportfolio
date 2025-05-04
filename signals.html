@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signals - Reinventing Read Receipts</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signals.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="signals-hero">
+        <div class="signals-hero-media">
+          <img
+            src="/Images/signals_hero.png"
+            alt="Signals Hero"
+            class="signals-hero-img"
+          />
+        </div>
+        <div class="signals-header">
+          <h1 class="signals-title">Signals - Reinventing Read Receipts</h1>
+          <div class="signals-info-grid">
+            <div>
+              <strong>Team</strong><br />
+              Yae Young Kim
+            </div>
+            <div>
+              <strong>My Role</strong><br />
+              UI Designer<br />
+              UX Researcher
+            </div>
+            <div>
+              <strong>Tools</strong><br />
+              Figma<br />
+              Notion
+            </div>
+            <div>
+              <strong>Timeline</strong><br />
+              2 Weeks
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="signals-sidebar" id="signals-sidebar">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#research">Research</a></li>
+          <!-- <li><a href="#ideation">Ideation</a></li> -->
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+        </ul>
+      </nav>
+      <section class="signals-section" id="overview">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">01. Overview</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <strong>Problem</strong>
+            <h3>
+              Despite being central to modern communication, read receipts fail
+              to reflect the nuance of real human availability—fueling anxiety
+              and misinterpretation.
+            </h3>
+            <p>
+              Traditional messaging apps offer only a binary read receipt
+              (“Read” or nothing). This fails to reflect real-life
+              nuances—people read messages when busy, and intentions get
+              misinterpreted.
+            </p>
+            <strong>Solution</strong>
+            <p>
+              Signal is a UX concept that rethinks the read receipt—offering
+              more than just a timestamp. Instead of sending a quick text, users
+              can quietly personalize how their "read" status is perceived,
+              using a subtle layer of emotional context.
+            </p>
+            <p>
+              The goal was to build a feature that allows users to quickly send
+              Signals—short contextual replies like “Will reply soon” or “Busy
+              until 5pm”—from the lock screen, reducing anxiety and social
+              friction in digital conversations.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="signals-centered-image">
+        <img src="/Images/messages.png" alt="Chat screenshot" />
+      </div>
+      <section class="signals-section" id="problem">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">02. Problem</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <p>
+              In today's messaging culture, being "left on read" can feel
+              personal—even when it's not. It often stirs up a lot of different
+              emotions when you think you were left on read, and you don't know
+              why
+            </p>
+            <ol class="signals-problem-list">
+              <li>"Are they ignoring me?"</li>
+              <li>"Did I do something wrong?"</li>
+              <li>"Why aren't they replying?"</li>
+            </ol>
+            <p>This is a common social UX failure.</p>
+            <strong>Why Signals Matter</strong>
+            <p>
+              Read receipts are inherently binary—either a message is marked as
+              seen or it isn't. But real life is far more nuanced. People often
+              read messages while they're busy, in meetings, or commuting,
+              without the capacity to respond right away. Unfortunately, not
+              replying immediately can unintentionally signal disinterest or
+              even rudeness, leading to misunderstandings and social friction.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="research">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">03. Research</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <p>
+              To understand how people experience read receipts today—and how
+              they might react to a feature like <em>Signals</em>—I conducted a
+              survey with <strong>52 participants</strong> across diverse
+              messaging habits.
+            </p>
+            <div class="signals-research-graph-row">
+              <div class="signals-research-graph">
+                <img src="/Images/chart_signals.png" alt="Graph 1" />
+                <div class="signals-graph-caption">
+                  Asking users who use read receipts to reflect on their
+                  experience
+                </div>
+              </div>
+            </div>
+            <div class="signals-key-findings">
+              <h4>Key Findings:</h4>
+              <ul>
+                <li>
+                  <strong>95%</strong> said they have intentionally avoided
+                  opening texts to avoid triggering a read receipt for those who
+                  have it on.
+                </li>
+                <li>
+                  <strong>45%</strong> admitted to wanting to send a follow up
+                  message (e.g ?? or Hello?) to gain closure on why they were
+                  left on read, and <strong>30%</strong> of users have done this
+                  occasionally through direct confrontation.
+                </li>
+                <li>
+                  <strong>64%</strong> said they
+                  <em>would use a feature</em> that allowed them to quietly
+                  signal their availability without sending a full text.
+                </li>
+                <li>
+                  <strong>44%</strong> said a customizable read receipt would
+                  <em>reduce miscommunication</em> in their daily conversations.
+                </li>
+              </ul>
+            </div>
+            <div class="signals-behavioral-patterns">
+              <h4>Behavioral Patterns Observed:</h4>
+              <ul>
+                <li>
+                  Many users <strong>disable read receipts</strong> entirely to
+                  avoid social pressure—even if it compromises communication
+                  clarity.
+                </li>
+                <li>
+                  When busy, people often
+                  <strong>leave friends on read unintentionally</strong>,
+                  causing friction in otherwise healthy relationships.
+                </li>
+                <li>
+                  A majority expressed
+                  <strong>desire for a "middle ground"</strong>—something
+                  between no response and sending a full reply.
+                </li>
+              </ul>
+            </div>
+            <div class="signals-direct-quotes">
+              <h4>Direct Quotes from Participants:</h4>
+              <blockquote>
+                "Sometimes I want to let someone know I saw their message
+                without feeling like I have to immediately come up with a
+                reply."
+              </blockquote>
+              <blockquote>
+                "I wish there was a way to say 'not ignoring you' without typing
+                a whole message or sounding dry."
+              </blockquote>
+              <blockquote>
+                "Read receipts create a lot of pressure. I either leave people
+                hanging or stress myself out trying to respond fast."
+              </blockquote>
+            </div>
+            <div class="signals-key-insights">
+              <h3>Key Insights</h3>
+              <ol>
+                <li>
+                  <strong>Read Receipts Induce Social Pressure</strong>
+                  <p>
+                    A significant portion of users experience anxiety when their
+                    messages are read but not promptly responded to. This
+                    pressure stems from the expectation of immediate
+                    communication, leading to discomfort for both senders and
+                    receivers.
+                    <br />
+                    <span class="signals-cite"
+                      >Edison Mail,
+                      <a
+                        href="https://www.researchgate.net/publication/316708987_Was_my_message_read_Privacy_and_Signaling_on_Facebook_Messenger?utm_source=chatgpt.com"
+                        target="_blank"
+                        >ResearchGate</a
+                      ></span
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Avoidance Behaviors Are Common</strong>
+                  <p>
+                    Many users adopt strategies to avoid the implications of
+                    read receipts, such as reading messages through
+                    notifications or disabling the feature entirely. This
+                    indicates a desire for more control over how their message
+                    engagement is perceived.
+                    <br />
+                    <span class="signals-cite">Medium</span>
+                  </p>
+                </li>
+                <li>
+                  <strong>Desire for Contextual Communication</strong>
+                  <p>
+                    Users express a need for features that allow them to convey
+                    their availability or intent without sending a full message.
+                    This includes options to indicate they have seen a message
+                    and will respond later, providing clarity without the
+                    pressure of immediate replies.
+                  </p>
+                </li>
+                <li>
+                  <strong>Potential for Customizable Read Receipts</strong>
+                  <p>
+                    Introducing customizable read receipts can address these
+                    concerns by allowing users to send predefined signals
+                    indicating their status. This feature can reduce
+                    misunderstandings and alleviate the pressure associated with
+                    traditional read receipts.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="solution">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title" style="margin-bottom: 50px">
+              04. Solution
+            </h2>
+          </div>
+        </div>
+
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <video
+              src="/Images/signals_lock_screen_demo.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              poster="Images/demo1-poster.jpg"
+              class="signals-feature-video"
+            ></video>
+          </div>
+          <div
+            class="signals-section-col signals-section-col-right signals-feature-desc"
+          >
+            <strong>Sent from the lock screen</strong>
+            <h3>Sending signals over</h3>
+            <p>
+              With a quick tap from the lock screen, users can send a Signal—a
+              short, pre-set status like "Will reply soon" or "Busy until 5pm".
+              Once sent, this signal seamlessly appears in place of a
+              traditional read receipt, giving the message sender valuable
+              context without requiring a full reply. It’s a low-effort,
+              high-empathy feature that preserves clarity while respecting
+              availability.
+            </p>
+            <video
+              src="/Images/Screen Recording 2025-05-03 at 14.46.18.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              poster="Images/demo2-poster.jpg"
+              class="signals-feature-video"
+              style="width: 100%; border-radius: none"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="solution-feature-2">
+        <div class="signals-section-content signals-feature-row-mirrored">
+          <div
+            class="signals-section-col signals-section-col-left signals-feature-desc"
+          >
+            <strong>From the message thread</strong>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 2rem">
+              Send Signals, Anywhere
+            </h3>
+            <p>
+              Whether from the lock screen or directly within the messages app,
+              Signals lets users quickly share their status—like “Can’t talk
+              now” or “Will reply soon”. Just long-press a chat and tap Signals
+              to send a subtle update, replacing pressure with clarity.
+            </p>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <video
+              src="Images/Screen Recording 2025-05-03 at 14.44.03.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              poster="Images/demo2-poster.jpg"
+              class="signals-feature-video"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="solution-feature-3">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left"></div>
+        </div>
+
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <video
+              src="Images/Screen Recording 2025-05-03 at 14.44.28.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              poster="Images/demo1-poster.jpg"
+              class="signals-feature-video"
+            ></video>
+          </div>
+          <div
+            class="signals-section-col signals-section-col-right signals-feature-desc"
+          >
+            <strong>Avoid Cluttering</strong>
+            <h3>Signal Now, Respond Later</h3>
+            <p>
+              When a user sends a Signal that implies a delayed response—like
+              “Will reply soon” or “Busy right now”—the conversation is
+              automatically sorted into the Replying Soon filter. This creates a
+              lightweight reminder system, helping users keep track of threads
+              that need follow-up without overwhelming their main inbox.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="solution-feature-4">
+        <div class="signals-section-content signals-feature-row-mirrored">
+          <div
+            class="signals-section-col signals-section-col-left signals-feature-desc"
+          >
+            <strong>Familiar Features</strong>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 2rem">
+              Familiar Feel, Smarter Signals
+            </h3>
+            <p>
+              Inspired by Apple’s Focus mode, this screen lets users create
+              custom Signals that automatically display on their lock screen.
+              With full control over timing, visibility, and recipients, users
+              can schedule when a Signal—like “Brb” or “Busy until 8 PM”—is
+              shown and to whom. It blends seamlessly into existing iOS patterns
+              while introducing a personalized layer of social context that
+              adapts to real-life rhythms.
+            </p>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <video
+              src="Images/Screen Recording 2025-05-03 at 14.45.26.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              poster="Images/demo2-poster.jpg"
+              class="signals-feature-video"
+            ></video>
+          </div>
+        </div>
+      </section>
+      <section class="signals-section" id="reflection">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">05. Takeaways</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <div class="takeaways-list">
+              <div class="takeaway">
+                <strong
+                  >Designing for Emotional Clarity Reduces Friction</strong
+                >
+                <p>
+                  Small UX tweaks, like contextual signals, can significantly
+                  ease emotional tension in everyday interactions—bridging the
+                  gap between intention and perception.
+                </p>
+              </div>
+              <div class="takeaway">
+                <strong>Subtle Interactions Can Carry Big Impact</strong>
+                <p>
+                  Features that take less than two seconds to use can reshape
+                  communication norms, proving that convenience and empathy
+                  aren’t mutually exclusive.
+                </p>
+              </div>
+              <div class="takeaway">
+                <strong>Customization Empowers Users</strong>
+                <p>
+                  Giving people control over how they’re perceived—without
+                  forcing full replies—fosters trust and lowers anxiety in
+                  digital spaces.
+                </p>
+              </div>
+            </div>
+            <div class="takeaways-reflection">
+              <p>
+                This project challenged me to think deeply about the nuances of
+                digital communication and the importance of designing for
+                empathy. I'm excited to bring these lessons into future work!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-heading">
+          Want to get in touch? I'd love to connect with you!
+        </p>
+        <div class="footer-links">
+          <a href="mailto:yaeyoung@ad.unc.edu">Email &rarr;</a>
+          <a
+            href="https://www.linkedin.com/in/yaeyyoung/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn &rarr;</a
+          >
+          <a
+            href="https://www.instagram.com/yaeyyoung/?hl=en"
+            target="_blank"
+            rel="noopener"
+            >Instagram &rarr;</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Show sidebar only after scrolling past hero
+      window.addEventListener("scroll", function () {
+        const sidebar = document.getElementById("signals-sidebar");
+        const hero = document.querySelector(".signals-hero");
+        if (window.scrollY > hero.offsetHeight - 80) {
+          sidebar.classList.add("visible");
+        } else {
+          sidebar.classList.remove("visible");
+        }
+      });
+      // Enable smooth scrolling for sidebar links
+      document.querySelectorAll(".signals-sidebar a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href && href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

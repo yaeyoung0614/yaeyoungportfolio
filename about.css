@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Arial, sans-serif;
+  color: #181818;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 2rem 3rem 0 0;
+  text-align: right;
+  z-index: 100;
+  padding-bottom: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #181818;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #a67c52;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.about-title {
+  font-family: "Fraunces", serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.about-divider {
+  border-bottom: 2px dotted #f7dbe5;
+  margin-bottom: 2.2rem;
+  width: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.about-text {
+  flex: 2;
+  width: 400px;
+  max-width: 60%;
+  font-family: "Work Sans", Arial, sans-serif;
+  line-height: 1.4;
+  color: #181818;
+}
+
+.about-text p {
+  max-width: 650px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 320px;
+  width: 100%;
+  height: 430px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .about-image {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-section {
+    padding: 2rem 1rem 0 1rem;
+  }
+  .about-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  border-top: 2px dotted #e5dedb;
+  margin-top: 4rem;
+  padding: 3rem 0 2rem 0;
+  background: transparent;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-heading {
+  font-family: "Fraunces", serif;
+  margin-bottom: 2 rem;
+  color: #181818;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: "Work Sans", Arial, sans-serif;
+  color: #181818;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #a67c52;
+}
+
+@media (max-width: 700px) {
+  .footer-heading {
+    font-size: 1.5rem;
+  }
+  .footer-links {
+    gap: 1.2rem;
+  }
+  .footer-links a {
+    font-size: 1rem;
+  }
+}
+
+.gallery-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 3rem auto 0 auto;
+  padding: 0 1.5rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  background: none;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+  display: block;
+  border-radius: 1.2rem;
+}
+
+.gallery-caption {
+  font-size: 0.95rem;
+  color: #181818;
+  font-family: "Work Sans", Arial, sans-serif;
+  padding-left: 0.2rem;
+}
+
+.gallery-date {
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+  .gallery-item img {
+    height: 200px;
+  }
+}
+
+.gallery-grid-manual {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.gallery-column {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-caption {
+  font-size: 0.95rem;
+  color: #181818;
+  font-family: "Work Sans", Arial, sans-serif;
+  padding-left: 0.2rem;
+}
+
+.gallery-date {
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid-manual {
+    flex-direction: column;
+    gap: 0;
+  }
+  .gallery-column {
+    width: 100%;
+    max-width: 100%;
+  }
+  .gallery-item {
+    max-width: 100%;
+  }
+}
