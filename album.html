@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="Images/icon.jpg" type="image/x-icon" />
+    <link rel="icon" href="Images/loopy.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar">
@@ -113,6 +113,12 @@
           <img src="Images/Album/9.png" />
           <div class="image-overlay">
             <p class="image-description">Connected with my spiritual animal</p>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <img src="Images/Album/red_nails.png" />
+          <div class="image-overlay">
+            <p class="image-description">Me and my friends love red nails.</p>
           </div>
         </div>
         <div class="masonry-item">
@@ -253,5 +259,18 @@
         </div>
       </div>
     </footer>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">☾</button>
+    <script>
+      const toggle = document.getElementById('darkModeToggle');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedMode = localStorage.getItem('darkMode');
+      if (savedMode === 'true' || (!savedMode && prefersDark)) {
+        document.body.classList.add('dark-mode');
+      }
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+      });
+    </script>
   </body>
 </html>

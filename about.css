@@ -78,7 +78,6 @@ main {
   max-width: 60%;
   font-family: "Work Sans", Arial, sans-serif;
   line-height: 1.4;
-  color: #181818;
 }
 
 .about-text p {
@@ -282,4 +281,87 @@ main {
   .gallery-item {
     max-width: 100%;
   }
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background: #3a3a3a;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2000;
+  font-size: 1.3rem;
+  transition: background 0.3s;
+  color: white;
+}
+
+.dark-mode-toggle:hover {
+  background: #686666;
+}
+
+.dark-mode-toggle .moon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle at 60% 40%, #181818 60%, transparent 62%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.dark-mode-toggle .moon::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #f7dbe5;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #f7dbe5;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #181818;
+  color: #f7dbe5;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .footer {
+  background: #181818;
+  border-color: #3a3a3a;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-heading {
+  color: white;
+}
+
+body.dark-mode .about-section,
+body.dark-mode .gallery-section,
+body.dark-mode .gallery-item {
+  color: white;
+}
+
+body.dark-mode .gallery-caption,
+body.dark-mode .gallery-date {
+  color: white;
+}
+
+body.dark-mode .about-title {
+  background: linear-gradient(90deg, hsl(0, 0%, 100%), #eb6896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }

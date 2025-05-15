@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="about.css" />
-    <link rel="icon" href="Images/icon.jpg" type="image/x-icon" />
+    <link rel="icon" href="Images/loopy.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar">
@@ -39,7 +39,7 @@
               in Chapel Hill, NC.
             </p>
             <p>
-              I’m a product designer with a love for building digital
+              I'm a product designer with a love for building digital
               experiences that are equal parts intuitive and intentional. I'm
               attending UNC Chapel Hill to study Computer Science and Studio
               Art—a mix that reflects how I think: structured yet expressive,
@@ -49,13 +49,13 @@
               Beyond the screen, I find creative fuel in handmade things—I bind
               books, collect zines, and am easily distracted in stationery
               stores. These slower forms of making help me stay grounded and
-              remind me that good design doesn’t always need to be digital.
+              remind me that good design doesn't always need to be digital.
             </p>
             <p>
-              When I’m not designing or crafting, I’m probably out playing
+              When I'm not designing or crafting, I'm probably out playing
               tennis (yes, even in 100-degree heat), overanalyzing a playlist,
               or grabbing yet another caffeine drink I absolutely know my body
-              can’t handle. I believe personality belongs in product design—and
+              can't handle. I believe personality belongs in product design—and
               that the best ideas often come when you're not trying too hard.
             </p>
           </div>
@@ -181,5 +181,29 @@
         </div>
       </div>
     </footer>
+    <button
+      id="darkModeToggle"
+      class="dark-mode-toggle"
+      aria-label="Toggle dark mode"
+    >
+      ☾
+    </button>
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const savedMode = localStorage.getItem("darkMode");
+      if (savedMode === "true" || (!savedMode && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "darkMode",
+          document.body.classList.contains("dark-mode")
+        );
+      });
+    </script>
   </body>
 </html>
