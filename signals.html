@@ -74,7 +74,7 @@
       <section class="signals-section" id="overview">
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
-            <h2 class="signals-section-title">01. Overview</h2>
+            <h2 class="signals-section-title">Overview</h2>
           </div>
           <div class="signals-section-col signals-section-col-right">
             <strong>Problem</strong>
@@ -111,7 +111,7 @@
       <section class="signals-section" id="problem">
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
-            <h2 class="signals-section-title">02. Problem</h2>
+            <h2 class="signals-section-title">Problem</h2>
           </div>
           <div class="signals-section-col signals-section-col-right">
             <p>
@@ -141,7 +141,7 @@
       <section class="signals-section" id="research">
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
-            <h2 class="signals-section-title">03. Research</h2>
+            <h2 class="signals-section-title">Research</h2>
           </div>
           <div class="signals-section-col signals-section-col-right">
             <p>
@@ -283,7 +283,7 @@
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
             <h2 class="signals-section-title" style="margin-bottom: 50px">
-              04. Solution
+              Solution
             </h2>
           </div>
         </div>
@@ -291,7 +291,7 @@
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
             <video
-              src="Images/signals_lock_screen_demo.mp4"
+              src="Images/signals_lock_screen_demo.mov"
               autoplay
               loop
               muted
@@ -310,7 +310,7 @@
               short, pre-set status like "Will reply soon" or "Busy until 5pm".
               Once sent, this signal seamlessly appears in place of a
               traditional read receipt, giving the message sender valuable
-              context without requiring a full reply. It’s a low-effort,
+              context without requiring a full reply. It's a low-effort,
               high-empathy feature that preserves clarity while respecting
               availability.
             </p>
@@ -338,14 +338,14 @@
             </h3>
             <p>
               Whether from the lock screen or directly within the messages app,
-              Signals lets users quickly share their status—like “Can’t talk
-              now” or “Will reply soon”. Just long-press a chat and tap Signals
+              Signals lets users quickly share their status—like "Can't talk
+              now" or "Will reply soon". Just long-press a chat and tap Signals
               to send a subtle update, replacing pressure with clarity.
             </p>
           </div>
           <div class="signals-section-col signals-section-col-right">
             <video
-              src="Images/Screen Recording 2025-05-03 at 14.44.03.mp4"
+              src="Images/Screen Recording 2025-05-03 at 14.44.03.mov"
               autoplay
               loop
               muted
@@ -364,7 +364,7 @@
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
             <video
-              src="Images/Screen Recording 2025-05-03 at 14.44.28.mp4"
+              src="Images/Screen Recording 2025-05-03 at 14.44.28.mov"
               autoplay
               loop
               muted
@@ -380,7 +380,7 @@
             <h3>Signal Now, Respond Later</h3>
             <p>
               When a user sends a Signal that implies a delayed response—like
-              “Will reply soon” or “Busy right now”—the conversation is
+              "Will reply soon" or "Busy right now"—the conversation is
               automatically sorted into the Replying Soon filter. This creates a
               lightweight reminder system, helping users keep track of threads
               that need follow-up without overwhelming their main inbox.
@@ -398,10 +398,10 @@
               Familiar Feel, Smarter Signals
             </h3>
             <p>
-              Inspired by Apple’s Focus mode, this screen lets users create
+              Inspired by Apple's Focus mode, this screen lets users create
               custom Signals that automatically display on their lock screen.
               With full control over timing, visibility, and recipients, users
-              can schedule when a Signal—like “Brb” or “Busy until 8 PM”—is
+              can schedule when a Signal—like "Brb" or "Busy until 8 PM"—is
               shown and to whom. It blends seamlessly into existing iOS patterns
               while introducing a personalized layer of social context that
               adapts to real-life rhythms.
@@ -409,7 +409,7 @@
           </div>
           <div class="signals-section-col signals-section-col-right">
             <video
-              src="Images/Screen Recording 2025-05-03 at 14.45.26.mp4"
+              src="Images/Screen Recording 2025-05-03 at 14.45.26.mov"
               autoplay
               loop
               muted
@@ -423,7 +423,7 @@
       <section class="signals-section" id="reflection">
         <div class="signals-section-content">
           <div class="signals-section-col signals-section-col-left">
-            <h2 class="signals-section-title">05. Takeaways</h2>
+            <h2 class="signals-section-title">Takeaways</h2>
           </div>
           <div class="signals-section-col signals-section-col-right">
             <div class="takeaways-list">
@@ -442,13 +442,13 @@
                 <p>
                   Features that take less than two seconds to use can reshape
                   communication norms, proving that convenience and empathy
-                  aren’t mutually exclusive.
+                  aren't mutually exclusive.
                 </p>
               </div>
               <div class="takeaway">
                 <strong>Customization Empowers Users</strong>
                 <p>
-                  Giving people control over how they’re perceived—without
+                  Giving people control over how they're perceived—without
                   forcing full replies—fosters trust and lowers anxiety in
                   digital spaces.
                 </p>
@@ -487,6 +487,13 @@
         </div>
       </div>
     </footer>
+    <button
+      id="darkModeToggle"
+      class="dark-mode-toggle"
+      aria-label="Toggle dark mode"
+    >
+      ☾
+    </button>
     <script>
       // Show sidebar only after scrolling past hero
       window.addEventListener("scroll", function () {
@@ -510,6 +517,21 @@
             }
           }
         });
+      });
+      const toggle = document.getElementById("darkModeToggle");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const savedMode = localStorage.getItem("darkMode");
+      if (savedMode === "true" || (!savedMode && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "darkMode",
+          document.body.classList.contains("dark-mode")
+        );
       });
     </script>
   </body>

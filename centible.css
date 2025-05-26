@@ -3,7 +3,6 @@ body {
   padding: 0;
   background: white;
   font-family: "Work Sans", Arial, sans-serif;
-  color: #181818;
 }
 
 .navbar {
@@ -26,11 +25,11 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #181818;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   transition: color 0.2s;
+  color: black;
 }
 
 .navbar a:hover {
@@ -85,6 +84,7 @@ body {
   gap: 2rem;
   font-size: 1rem;
   margin-bottom: 2.5rem;
+  line-height: 1.5;
 }
 
 .signals-info-grid strong {
@@ -119,11 +119,11 @@ body {
 }
 
 .signals-sidebar a {
-  color: #181818;
   text-decoration: none;
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 1rem;
   transition: color 0.2s;
+  color: black;
 }
 
 .signals-sidebar a:hover {
@@ -175,7 +175,6 @@ body {
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 0.5rem;
-  color: #181818;
 }
 
 .signals-section-col-right h3 {
@@ -216,7 +215,6 @@ body {
 .footer-heading {
   font-family: "Fraunces", serif;
   margin-bottom: 2 rem;
-  color: #181818;
 }
 
 .footer-links {
@@ -228,7 +226,6 @@ body {
 
 .footer-links a {
   font-family: "Work Sans", Arial, sans-serif;
-  color: #181818;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -260,6 +257,14 @@ body {
   .signals-section {
     max-width: 98vw;
   }
+}
+
+body.dark-mode .signals-cite {
+  background: #333;
+  color: white;
+}
+body.dark-mode .signals-cite p {
+  color: #fff;
 }
 
 @media (max-width: 900px) {
@@ -340,7 +345,6 @@ body {
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #181818;
 }
 
 .takeaways-reflection {
@@ -350,7 +354,6 @@ body {
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  color: #181818;
 }
 
 .signals-section-col-right h3 {
@@ -359,7 +362,6 @@ body {
   font-weight: 700;
   margin: 2rem 0 1rem 0;
   line-height: 1.2;
-  color: #181818;
 }
 
 .signals-section-col-right h3:first-child {
@@ -371,7 +373,6 @@ body {
   font-family: "Work Sans", Arial, sans-serif;
   line-height: 1.5;
   font-size: 15px;
-  color: #181818;
 }
 
 .signals-section-col-right strong {
@@ -379,7 +380,6 @@ body {
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 0.5rem;
-  color: #181818;
 }
 
 @media (max-width: 900px) {
@@ -649,6 +649,7 @@ body {
   height: 600px;
   object-fit: contain;
   display: block;
+  border-radius: 50px;
 }
 
 @media (max-width: 1100px) {
@@ -679,4 +680,84 @@ body {
     max-width: 350px;
     max-height: 650px;
   }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background: #181818;
+  color: #f8f8f8;
+}
+
+body.dark-mode .navbar {
+  background: #181818;
+}
+
+body.dark-mode .navbar a {
+  color: #f8f8f8;
+}
+
+body.dark-mode .signals-sidebar a {
+  color: #f8f8f8;
+}
+
+body.dark-mode .signals-section-col-right strong {
+  color: #f8f8f8;
+}
+
+body.dark-mode .footer {
+  border-top: 2px dotted #333;
+}
+
+body.dark-mode .footer-heading {
+  color: #f8f8f8;
+}
+
+body.dark-mode .footer-links a {
+  color: #f8f8f8;
+}
+
+body.dark-mode .signals-graph-caption {
+  color: #aaa;
+}
+
+body.dark-mode .signals-direct-quotes blockquote {
+  background: #222;
+  border-left: 3px solid #333;
+}
+
+body.dark-mode .figma-embed {
+  background: #222;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #f8f8f8;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: #333;
+  color: #f8f8f8;
+}
+
+.dark-mode-toggle:hover {
+  background: #eee;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background: #444;
 }

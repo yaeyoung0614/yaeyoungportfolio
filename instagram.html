@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Stories Feature</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/loopy.png" type="image/x-icon" />
+    <link rel="stylesheet" href="instagram.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="album.html">Snippets</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1s6A3gieS58q5g8A9rHvCLJMA7dpZjDUs/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="signals-hero">
+        <div class="signals-hero-media">
+          <img
+            src="Images/Instagram_Cover.png"
+            alt="Instagram Stories Feature"
+            class="signals-hero-img"
+          />
+        </div>
+        <div class="signals-header">
+          <h1 class="signals-title">
+            Enhancing Creative and Collaborative Flows in Instagram
+          </h1>
+          <div class="signals-info-grid">
+            <div>
+              <strong>Team</strong><br />
+              Solo Project
+            </div>
+            <div>
+              <strong>My Role</strong><br />
+              UX Designer
+            </div>
+            <div>
+              <strong>Tools</strong><br />
+              Figma<br />
+              Principle
+            </div>
+            <div>
+              <strong>Timeline</strong><br />
+              2 Weeks
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="signals-sidebar" id="signals-sidebar">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+        </ul>
+      </nav>
+      <section id="overview" class="signals-section">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">Overview</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <strong>Problem</strong>
+            <h3>
+              Instagram's creative tools and collaborative features have
+              usability gaps that slow down users and create friction in their
+              workflows.
+            </h3>
+            <p>
+              Instagram is a platform built on quick creativity and social
+              interaction. But even in such a refined product, small frictions
+              in micro-interactions can slow users down or block key features
+              entirely. In this case study, I identified and resolved two
+              overlooked usability gaps:
+            </p>
+            <ul class="signals-problem-list">
+              <li>
+                The inefficient shape selection process when editing photos in
+                Stories.
+              </li>
+              <li>
+                The inconsistent ability to create collaborative Saved
+                Collections from different parts of the app.
+              </li>
+            </ul>
+            <strong>Solution</strong>
+            <p>
+              These updates aim to streamline creative decisions and bring
+              consistency to collaborative features—without disrupting
+              Instagram's core design language.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" class="signals-section">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">Problem</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <h3>1. Story Shape Selection</h3>
+            <p>
+              When a user adds a photo to their Story and wants to crop it into
+              a shape (circle, star, heart, etc.), the current UI forces them to
+              click through every shape in a fixed loop. This creates several
+              pain points:
+            </p>
+            <ul class="signals-problem-list">
+              <li>No way to preview shapes before applying.</li>
+              <li>No ability to go back if you accidentally skip one.</li>
+              <li>
+                The only option is to keep tapping until the shape cycles back
+                around.
+              </li>
+            </ul>
+            <p>
+              This lack of control turns a quick creative choice into a
+              frustrating task, especially when users want to experiment with
+              multiple layouts.
+            </p>
+
+            <div class="signals-centered-image">
+              <video
+                src="Images/IG_Walkthrough.mov"
+                autoplay
+                loop
+                muted
+                playsinline
+                poster="Images/instagram_current_flow_poster.jpg"
+                class="signals-feature-video"
+                style="width: 60%; height: 100%"
+              ></video>
+              <p class="signals-graph-caption">
+                Current shape selection flow in Instagram Stories
+              </p>
+            </div>
+
+            <h3>2. Saved Collections Collaboration</h3>
+            <p>
+              Instagram allows users to create shared Saved Collections—but only
+              through the Explore page, and only during the act of saving a
+              post. This leads to major usability problems:
+            </p>
+            <ul class="signals-problem-list">
+              <li>
+                If a user tries to create a collection through Profile > Saved >
+                "+", there is no way to add contributors.
+              </li>
+              <li>
+                There is no way to make an existing collection collaborative
+                from that view either.
+              </li>
+              <li>
+                Users may not even discover the collaboration feature at all
+                unless they happen to use the Explore-based flow.
+              </li>
+            </ul>
+            <p>
+              This creates a disjointed experience, where feature access depends
+              on entry point, not user intent.
+            </p>
+
+            <div class="signals-centered-image">
+              <video
+                src="Images/Current_Collection_Walkthrough.mov"
+                autoplay
+                loop
+                muted
+                playsinline
+                poster="Images/instagram_current_flow_poster.jpg"
+                class="signals-feature-video"
+                style="width: 60%; height: 100%"
+              ></video>
+              <p class="signals-graph-caption">
+                Current Saved Collections creation flow
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="solution" class="signals-section">
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <h2 class="signals-section-title">Solution</h2>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <p>
+              To address these usability gaps, I designed two key improvements
+              that enhance both creative and collaborative workflows in
+              Instagram.
+            </p>
+          </div>
+        </div>
+
+        <div class="signals-section-content">
+          <div class="signals-section-col signals-section-col-left">
+            <img
+              src="Images/Stories.gif"
+              alt="Stories"
+              class="signals-feature-video"
+            />
+          </div>
+          <div
+            class="signals-section-col signals-section-col-right signals-feature-desc"
+          >
+            <strong>Shape Selector Redesign</strong>
+            <h3>Preview and Select Shapes Instantly</h3>
+            <p>
+              Introduced a scrollable horizontal shape preview bar with
+              real-time photo thumbnails. Users can now visually browse all
+              available shapes and tap to select, with swipe gestures for fluid
+              exploration and a label showing the currently applied shape.
+            </p>
+            <p>
+              This redesign transforms a frustrating cycle of taps into an
+              intuitive visual selection process, making it easier for users to
+              experiment with different shapes and find the perfect fit for
+              their content.
+            </p>
+          </div>
+        </div>
+
+        <div class="signals-section-content signals-feature-row-mirrored">
+          <div
+            class="signals-section-col signals-section-col-left signals-feature-desc"
+          >
+            <strong>Unified Collection Creation</strong>
+            <h3>Create and Share Collections Anywhere</h3>
+            <p>
+              Added "+ Add Contributor" to the Profile > Saved > '+' Create
+              Collection flow. Users can now edit contributor permissions from
+              the collection overflow menu, ensuring consistency between
+              Explore-based and Profile-based creation flows.
+            </p>
+            <p>
+              This unified approach makes collaboration features discoverable
+              and accessible from any entry point, reducing friction and
+              improving the overall user experience.
+            </p>
+          </div>
+          <div class="signals-section-col signals-section-col-right">
+            <img
+              src="Images/Contributors.gif"
+              alt="Contributors"
+              class="signals-feature-video"
+            />
+          </div>
+        </div>
+
+        <div class="figma-embed">
+          <h3>Interactive Prototype</h3>
+          <p>
+            Explore the full interactive prototype in Figma to see how these
+            improvements work in practice:
+          </p>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="450"
+            src="https://embed.figma.com/design/5N7CIdMGJbalaV4WG8UDs9/Instagram-Stories-Feature?node-id=0-1&embed-host=share"
+            allowfullscreen
+          ></iframe>
+          <p class="signals-graph-caption">
+            Click to interact with the prototype
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-heading">
+          Want to get in touch? I'd love to connect with you!
+        </p>
+        <div class="footer-links">
+          <a href="mailto:yaeyoung@ad.unc.edu">Email &rarr;</a>
+          <a
+            href="https://www.linkedin.com/in/yaeyoung/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn &rarr;</a
+          >
+          <a
+            href="https://www.instagram.com/yaeyoung/?hl=en"
+            target="_blank"
+            rel="noopener"
+            >Instagram &rarr;</a
+          >
+        </div>
+      </div>
+    </footer>
+    <button
+      id="darkModeToggle"
+      class="dark-mode-toggle"
+      aria-label="Toggle dark mode"
+    >
+      ☾
+    </button>
+    <script>
+      // Show sidebar only after scrolling past hero
+      window.addEventListener("scroll", function () {
+        const sidebar = document.getElementById("signals-sidebar");
+        const hero = document.querySelector(".signals-hero");
+        if (window.scrollY > hero.offsetHeight - 80) {
+          sidebar.classList.add("visible");
+        } else {
+          sidebar.classList.remove("visible");
+        }
+      });
+      // Enable smooth scrolling for sidebar links
+      document.querySelectorAll(".signals-sidebar a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if (href && href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          }
+        });
+      });
+      const toggle = document.getElementById("darkModeToggle");
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const savedMode = localStorage.getItem("darkMode");
+      if (savedMode === "true" || (!savedMode && prefersDark)) {
+        document.body.classList.add("dark-mode");
+      }
+      toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "darkMode",
+          document.body.classList.contains("dark-mode")
+        );
+      });
+    </script>
+  </body>
+</html>
